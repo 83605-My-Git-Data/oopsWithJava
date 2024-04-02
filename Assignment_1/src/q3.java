@@ -48,6 +48,7 @@ public class q3 {
 				break;
 			case 6:
 				System.out.println("Total bill is: "+bill);
+				choice = 0;
 				
 				break;
 				
