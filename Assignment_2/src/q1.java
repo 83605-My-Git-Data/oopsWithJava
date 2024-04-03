@@ -17,13 +17,20 @@ public class q1 {
 		
 		double amount;
 		
-		Invoice invoice = new Invoice();
+		Invoice invoice = new Invoice("1","hammer",-4,50);
 		
 		
-				
+		if(invoice.getQuantity()<0) {
+			invoice.setQuantity(0);
+			
+		}
+		
+		if(invoice.getPrice()<0) {
+			invoice.setPrice(0.0);
+		}
 		
 		
-		invoice.enterData();
+	
 		invoice.displayData();
 		amount = invoice.getQuantity()*invoice.getPrice();	
 		

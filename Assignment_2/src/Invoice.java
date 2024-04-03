@@ -17,7 +17,6 @@ public class Invoice {
 	private String partDesc;
 	private int quantity;
 	private double price;
-	private double amount;
 	
 	
 	public Invoice() {
@@ -31,6 +30,8 @@ public class Invoice {
 		this.price = price;
 		
 	}
+	
+
 
 
 	public String getPartNo() {
@@ -72,27 +73,7 @@ public class Invoice {
 		this.price = price;
 	}
 	
-	
-	public void enterData() {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter PartNo: ");
-		partNo = sc.nextLine();
-		System.out.println("Enter partDes: ");
-		partDesc = sc.nextLine();
-		System.out.println("Enter quantity: ");
-		quantity = sc.nextInt();
-		if(quantity<0) {
-			quantity = 0;
-		}
-		System.out.println("Enter Price: ");
-		price = sc.nextDouble();
-		if(price<0) {
-			price = 0.0;
-		}
-		
-		
-		
-	}
+
 	
 	
 	
